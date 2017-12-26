@@ -1,0 +1,7 @@
+{
+    "title": "Mag3 corp",
+    "countries": {
+        "one": "{step} step",
+        "many": "{step} steps"
+    }
+}
