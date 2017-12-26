@@ -3,3 +3,7 @@ files:
     ignore:
       - /config/locales/*.*.yml
     translation: /config/locales/%file_name%.%two_letters_code%.yml
+  - source: /webpack/**/*.json
+    ignore:
+      - /webpack/**/*.*.json
+    translation: /webpack/**/%file_name%.%two_letters_code%.json
