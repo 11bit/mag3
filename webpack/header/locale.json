@@ -1,4 +1,8 @@
 {
     "title": "Mag3 corp",
-    "countries": "{count, plural, one {# country} other {# countries}}"
+    "subtitle": "Hey Hey!",
+    "countries": {
+        "one": "{{count}} country",
+        "other": "{{count}} countries"
+    }
 }
