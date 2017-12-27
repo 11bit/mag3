@@ -6,3 +6,7 @@ en:
   content: This is main page for mag3 corp. It contains all the useful info
   content2: Happy reading
   phone: 33-33-33-33
+  errors:
+    zero: You have %{count} errors, yay!
+    one:  You have %{count} error
+    many:  You have %{count} errors
