@@ -1,12 +1,14 @@
 phraseapp:
-  sources:
-    - file: "./config/locales/*.<locale_code>.yml"
-      params:
-        file_format: yml
-    - file: "./webpack/**/*.<locale_code>.json"
-      params:
-        file_format: nested_json
-  targets:
-    - file: "./config/locales/<locale_code>.json"
-      params:
-        file_format: yml
+  push:
+    sources:
+      - file: "./config/locales/*.<locale_code>.yml"
+        params:
+          file_format: yml
+      - file: "./webpack/**/*.<locale_code>.json"
+        params:
+          file_format: nested_json
+  pull:
+    targets:
+      - file: "./config/locales/<locale_code>.json"
+        params:
+          file_format: yml
