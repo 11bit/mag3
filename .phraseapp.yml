@@ -4,11 +4,18 @@ phraseapp:
       - file: "./config/locales/*.<locale_code>.yml"
         params:
           file_format: yml
+          tags: backend
       - file: "./webpack/**/*.<locale_code>.json"
         params:
           file_format: nested_json
+          tags: frontend
   pull:
     targets:
-      - file: "./config/locales/<locale_code>.json"
+      - file: "./config/locales/<locale_code>.yml"
         params:
           file_format: yml
+          tag: backend
+      - file: "./webpack/<locale_code>.json"
+        params:
+          file_format: nested_json
+          tag: frontend
